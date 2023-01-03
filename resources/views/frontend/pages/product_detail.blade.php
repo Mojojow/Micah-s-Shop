@@ -84,7 +84,7 @@
                                                 @php 
                                                     $after_discount=($product_detail->price-(($product_detail->price*$product_detail->discount)/100));
                                                 @endphp
-												<p class="price"><span class="discount">${{number_format($after_discount,2)}}</span><s>${{number_format($product_detail->price,2)}}</s> </p>
+												<p class="price"><span class="discount">₱{{number_format($after_discount,2)}}</span><s>₱{{number_format($product_detail->price,2)}}</s> </p>
 												<p class="description">{!!($product_detail->summary)!!}</p>
 											</div>
 											<!--/ End Description -->
@@ -247,8 +247,8 @@
 																		{{-- @php 
 																			$rate=0;
 																			foreach($product_detail->rate as $key=>$rate){
-																				$rate +=$rate
-																			}
+																				$rate +=$rate 
+																			} 
 																		@endphp --}}
 																		<h4>{{ceil($product_detail->getReview->avg('rate'))}} <span>(Overall)</span></h4>
 																		<span>Based on {{$product_detail->getReview->count()}} Comments</span>
@@ -347,8 +347,8 @@
                                             @php 
                                                 $after_discount=($data->price-(($data->discount*$data->price)/100));
                                             @endphp
-                                            <span class="old">${{number_format($data->price,2)}}</span>
-                                            <span>${{number_format($after_discount,2)}}</span>
+                                            <span class="old">₱{{number_format($data->price,2)}}</span>
+                                            <span>₱{{number_format($after_discount,2)}}</span>
                                         </div>
                                       
                                     </div>
@@ -406,15 +406,15 @@
                                         <i class="yellow fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                     </div>
-                                    <a href="#"> (1 customer review)</a>
+                                    <a href="#"> (0 customer review)</a>
                                 </div>
                                 <div class="quickview-stock">
                                     <span><i class="fa fa-check-circle-o"></i> in stock</span>
                                 </div>
                             </div>
-                            <h3>$29.00</h3>
+                            <h3>29.00</h3>
                             <div class="quickview-peragraph">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam in quos qui nemo ipsum numquam.</p>
+                                <p>T-Shirt</p>
                             </div>
                             <div class="size">
                                 <div class="row">
@@ -460,7 +460,7 @@
                                 <a href="#" class="btn min"><i class="ti-heart"></i></a>
                                 <a href="#" class="btn min"><i class="fa fa-compress"></i></a>
                             </div>
-                            <div class="default-social">
+                            <!--<div class="default-social">
                                 <h4 class="share-now">Share:</h4>
                                 <ul>
                                     <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -468,7 +468,7 @@
                                     <li><a class="youtube" href="#"><i class="fa fa-pinterest-p"></i></a></li>
                                     <li><a class="dribbble" href="#"><i class="fa fa-google-plus"></i></a></li>
                                 </ul>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -507,7 +507,7 @@
 		float: right;
 		padding-left: 2px;
 		cursor: pointer;
-		color: #F7941D;
+		color: rgb(245, 61, 92);
 		font-size: 16px;
 		margin-top: 5px;
 		}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<link rel="stylesheet" href="/backend/css/index.css">
 <head>
   <title>E-SHOP || Login Page</title>
   @include('backend.layouts.head')
@@ -20,7 +20,8 @@
           <div class="card-body p-0">
             <!-- Nested Row within Card Body -->
             <div class="row">
-              <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+             <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>-->
+             <img class="logo" src="/backend/img/logoshop.jpg" alt="">
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">

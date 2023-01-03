@@ -19,10 +19,10 @@
     </li>
 
     <!-- Divider -->
-    <hr class="sidebar-divider">
+    <!--<hr class="sidebar-divider">-->
 
     <!-- Heading -->
-    <div class="sidebar-heading">
+     <div class="sidebar-heading">
         Banner
     </div>
 
@@ -55,7 +55,7 @@
         </div>
 
     <!-- Categories -->
-    <li class="nav-item">
+    -<li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#categoryCollapse" aria-expanded="true" aria-controls="categoryCollapse">
           <i class="fas fa-sitemap"></i>
           <span>Category</span>
@@ -68,6 +68,7 @@
           </div>
         </div>
     </li>
+
     {{-- Products --}}
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#productCollapse" aria-expanded="true" aria-controls="productCollapse">
@@ -197,7 +198,7 @@
     <div class="sidebar-heading">
         General Settings
     </div>
-    <li class="nav-item">
+     <li class="nav-item">
       <a class="nav-link" href="{{route('coupon.index')}}">
           <i class="fas fa-table"></i>
           <span>Coupon</span></a>
